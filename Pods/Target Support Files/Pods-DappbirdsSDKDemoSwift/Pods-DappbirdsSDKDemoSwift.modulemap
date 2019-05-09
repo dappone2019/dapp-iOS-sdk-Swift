@@ -1,0 +1,6 @@
+framework module Pods_DappbirdsSDKDemoSwift {
+  umbrella header "Pods-DappbirdsSDKDemoSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
