@@ -14,8 +14,8 @@
 		838499FA2282D79200A35D3A /* neoutils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838499F72282D79200A35D3A /* neoutils.framework */; };
 		83849A052282DBDC00A35D3A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A042282DBDC00A35D3A /* Constant.swift */; };
 		83849A072282E29900A35D3A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A062282E29900A35D3A /* UIColor+Extension.swift */; };
-		83849DE422841A1C00A35D3A /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83849DE222841A1C00A35D3A /* DappbirdsSDK.framework */; };
-		83849DE522841A1C00A35D3A /* DappbirdsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83849DE322841A1C00A35D3A /* DappbirdsBundle.bundle */; };
+		83849E332285249200A35D3A /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83849E312285249200A35D3A /* DappbirdsSDK.framework */; };
+		83849E342285249200A35D3A /* DappbirdsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83849E322285249200A35D3A /* DappbirdsBundle.bundle */; };
 		90DE3C46208BF4FF8509F13A /* Pods_DappbirdsSDKDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171F7167CD5B28D97FE1DF3 /* Pods_DappbirdsSDKDemoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,8 @@
 		838499FD2282D7C000A35D3A /* DappbirdsSDKDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DappbirdsSDKDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		83849A042282DBDC00A35D3A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		83849A062282E29900A35D3A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		83849DE222841A1C00A35D3A /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
-		83849DE322841A1C00A35D3A /* DappbirdsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DappbirdsBundle.bundle; sourceTree = "<group>"; };
+		83849E312285249200A35D3A /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
+		83849E322285249200A35D3A /* DappbirdsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DappbirdsBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83849DE422841A1C00A35D3A /* DappbirdsSDK.framework in Frameworks */,
+				83849E332285249200A35D3A /* DappbirdsSDK.framework in Frameworks */,
 				838499FA2282D79200A35D3A /* neoutils.framework in Frameworks */,
 				90DE3C46208BF4FF8509F13A /* Pods_DappbirdsSDKDemoSwift.framework in Frameworks */,
 			);
@@ -80,8 +80,8 @@
 		838499E42282D66100A35D3A /* DappbirdsSDKDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
-				83849DE322841A1C00A35D3A /* DappbirdsBundle.bundle */,
-				83849DE222841A1C00A35D3A /* DappbirdsSDK.framework */,
+				83849E322285249200A35D3A /* DappbirdsBundle.bundle */,
+				83849E312285249200A35D3A /* DappbirdsSDK.framework */,
 				838499F72282D79200A35D3A /* neoutils.framework */,
 				838499E52282D66100A35D3A /* AppDelegate.swift */,
 				83849A042282DBDC00A35D3A /* Constant.swift */,
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838499F02282D66200A35D3A /* LaunchScreen.storyboard in Resources */,
-				83849DE522841A1C00A35D3A /* DappbirdsBundle.bundle in Resources */,
+				83849E342285249200A35D3A /* DappbirdsBundle.bundle in Resources */,
 				838499ED2282D66200A35D3A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +373,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DappbirdsSDKDemoSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +412,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DappbirdsSDKDemoSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

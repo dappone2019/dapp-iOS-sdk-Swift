@@ -44,16 +44,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if self.manager != nil {
             self.queryIsExitWallet()
         }
+        if self.tableView != nil {
+            self.tableView.reloadData()
+        }
     }
     
     /**
      * 1.查询地址余额
      */
     func getBalanceWithAddress() {
-        self.manager.getBalanceWithAddress(self.addressLabel.text, callback: { (balanceDict, error) in
+        self.manager.getCurrentWalletBalanceCallback { (balanceDict, error) in
             let dict = balanceDict as! [String: String]
             self.ongBalance.text = "ONG余额：\(dict["ONG"] ?? "暂无")"
-        })
+        }
     }
     
     
@@ -97,9 +100,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
      * 4.统一支付
      */
     func modalToPayViewController() {
-        let random = Int(arc4random() % 10000)
+        let random = Int(arc4random() % 1000000)
         let order_no = "ordernomber\(random)"
-        self.manager.createdPayWalletWith(from_address: self.addressLabel.text, contract_address: "48628e2aa44a7e7f2d8e9fbe4001d731713789ca", _signature: "cf38f9b6d2dc07784e727066f2fdac77", order_no: order_no, amount: "0.1", _timestamp: "1556543707")
+        self.manager.createdPayWallet(withContract_address: "48628e2aa44a7e7f2d8e9fbe4001d731713789ca", _signature: "cf38f9b6d2dc07784e727066f2fdac77", order_no: order_no, amount: "0.1", _timestamp: "1556543707")
         self.manager.payCallBack = { [weak self] (success, msg) in
             Tprint(messsage: success)
             if success {
