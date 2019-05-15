@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     /**
-     * 1.查询地址余额
+     * 1.查询当前钱包余额
      */
     func getBalanceWithAddress() {
         self.manager.getCurrentWalletBalanceCallback { (balanceDict, error) in

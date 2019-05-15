@@ -8,7 +8,7 @@ target 'DappbirdsSDKDemoSwift' do
   # Pods for DappbirdsSDKDemoSwift
 
     pod 'AFNetworking', '~> 2.6.3'
-    pod 'MJRefresh'
     pod 'MJExtension'
+    pod 'MJRefresh'
 
 end
