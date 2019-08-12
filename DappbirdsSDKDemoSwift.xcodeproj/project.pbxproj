@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8330724423014D2900531AFC /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8330724323014D2900531AFC /* DappbirdsSDK.framework */; };
 		838499E62282D66100A35D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499E52282D66100A35D3A /* AppDelegate.swift */; };
 		838499E82282D66100A35D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499E72282D66100A35D3A /* ViewController.swift */; };
 		838499ED2282D66200A35D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838499EC2282D66200A35D3A /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		83849A052282DBDC00A35D3A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A042282DBDC00A35D3A /* Constant.swift */; };
 		83849A072282E29900A35D3A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A062282E29900A35D3A /* UIColor+Extension.swift */; };
 		8396D705229F902800A8B198 /* DappbirdsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8396D703229F902800A8B198 /* DappbirdsBundle.bundle */; };
-		8396D706229F902800A8B198 /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8396D704229F902800A8B198 /* DappbirdsSDK.framework */; };
 		90DE3C46208BF4FF8509F13A /* Pods_DappbirdsSDKDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171F7167CD5B28D97FE1DF3 /* Pods_DappbirdsSDKDemoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +23,7 @@
 		0171F7167CD5B28D97FE1DF3 /* Pods_DappbirdsSDKDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DappbirdsSDKDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B77A7C8B68A512555ADDCF /* Pods-DappbirdsSDKDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DappbirdsSDKDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DappbirdsSDKDemoSwift/Pods-DappbirdsSDKDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		346F5613C1FD3598417DAA4E /* Pods-DappbirdsSDKDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DappbirdsSDKDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DappbirdsSDKDemoSwift/Pods-DappbirdsSDKDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		8330724323014D2900531AFC /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
 		838499E22282D66100A35D3A /* DappbirdsSDKDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DappbirdsSDKDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838499E52282D66100A35D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838499E72282D66100A35D3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		83849A042282DBDC00A35D3A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		83849A062282E29900A35D3A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8396D703229F902800A8B198 /* DappbirdsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DappbirdsBundle.bundle; sourceTree = "<group>"; };
-		8396D704229F902800A8B198 /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8396D706229F902800A8B198 /* DappbirdsSDK.framework in Frameworks */,
+				8330724423014D2900531AFC /* DappbirdsSDK.framework in Frameworks */,
 				838499FA2282D79200A35D3A /* neoutils.framework in Frameworks */,
 				90DE3C46208BF4FF8509F13A /* Pods_DappbirdsSDKDemoSwift.framework in Frameworks */,
 			);
@@ -80,8 +80,8 @@
 		838499E42282D66100A35D3A /* DappbirdsSDKDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8330724323014D2900531AFC /* DappbirdsSDK.framework */,
 				8396D703229F902800A8B198 /* DappbirdsBundle.bundle */,
-				8396D704229F902800A8B198 /* DappbirdsSDK.framework */,
 				838499F72282D79200A35D3A /* neoutils.framework */,
 				838499E52282D66100A35D3A /* AppDelegate.swift */,
 				83849A042282DBDC00A35D3A /* Constant.swift */,
